@@ -6,8 +6,7 @@ import seaborn as sns
 from sklearn.datasets import load_breast_cancer
 cancer=load_breast_cancer()
 
-"""cancer.keys()
-print(cancer["target"])"""
+
 #### load data
 df_cancer=pd.DataFramedf_cancer = pd.DataFrame(np.c_[cancer['data'], cancer['target']], columns = np.append(cancer['feature_names'], ['target']))
 
